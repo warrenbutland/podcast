@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+     
+
+        <title>MAD9135-ASSIGN2</title>
+    </head>
+    <body>
+       <div class="app">
+           <div id="home" class="active">
+                <div id="header">
+                    <h1 class="appName"> COOL MUSIC APP </h1>
+                </div>
+                <div >
+                  <button class="addMusic">Add Music</button>
+                  <input id="urlInput" class="hide" type='text' name="" placeholder='enter URL for podcast'> </>
+                  <button id="submit" class="hide">submit</button>
+                </div>
+              <div class="addMusicToApp">
+                <ol class="loadedMusicList">
+                    <p>Your Current PodCasts</p>
+                    
+                </ol>
+              </div>
+           </div> 
+
+
+            <div id="musicPage" class="hide" >
+                <div data-role="header" data-position="fixed">
+                <button class="backButton">BACK</button>
+                    <h1> Your Music </h1>
+                    </div>
+                <div data-role="content">
+                    <h3> Music List</h3>
+                     <ol></ol>
+                </div>
+
+                <button id="audioPlay">Play</button>
+                <button id="audioPause">Pause</button>
+                <button id="audioStop">Stop</button>
+                <button id="mediaPosition">Media position</button>
+                <button id="forwardSkip">Skip 30 seconds forward</button>
+                <button id="backSkip">Skip 15 seconds back</button>
+
+
+                 <!-- <div data-role="footer" data-position="fixed">
+                    <a href="#home" data-role="button">Home</a>
+                 </div>  
+                 -->
+
+             </div>    
+      
+
+        <script type="text/javascript" src="cordova.js"></script>
+        
+         <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
+        <!-- <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.js"></script>-->
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

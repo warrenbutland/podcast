@@ -1,0 +1,101 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+
+
+/* Portrait layout (default) */
+.app{
+    text-align: center;
+}
+#header{
+   
+    width: 100%;
+}  
+#urlInput, #submit{
+    margin-left: 30%;
+
+}  
+.loadedMusicList img, li{
+    font-size: 13px;
+    clear: right;
+    
+}  
+.addMusicToApp{
+    margin-top: 20%;
+}
+                          
+.appName{
+    font-size: 1rem;
+    text-align: center;
+    color: blue;
+   
+}
+#addMusic{
+    margin-top: 40%;
+    color: red;
+    text-align: center;
+}
+.appMain li{
+
+    list-style: none;
+}
+.loadedMusicList{
+    list-style: none;
+    text-align: left;
+    margin-top: 10%;
+
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .appMain {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+
+
+/*page show stuff */
+
+.active{
+    left:0;
+    z-index: 5;
+    /* show one page at a time*/
+}
+.show{
+    display:block;  
+}
+.hide{
+    display:none;   
+}
+
+
+.footer {
+bottom: 1px;
+padding-bottom: 1px;
+color: black;
+}
+
+

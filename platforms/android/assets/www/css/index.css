@@ -1,0 +1,150 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,1.0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+.ui-mobile{
+   
+    background-color:black;
+}
+
+
+body{
+
+    padding: 1px;
+    margin: 0;
+}
+
+/* Portrait layout (default) */
+.appMain{
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", 
+    Helvetica, Arial, sans-serif;
+
+   
+}
+#header{
+   
+    width: 100%;
+}  
+#urlInput{
+    vertical-align: text-top;
+    min-width:300px; 
+    max-width:600px;
+
+}
+#submit_btn{
+   vertical-align: left;
+   color: white;
+   text-decoration: none;
+   margin-left: 20px;
+
+}  
+.loadedMusicList img, li{
+   font-size: 13px;
+    clear: right;
+    color: whitesmoke;
+      padding:0 10px;
+    border-bottom:1px solid #ccc;
+    height:40px; line-height:40px;
+    font-weight:normal;
+    cursor:pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    
+}  
+.addMusicToApp{
+    margin-top: 20%;
+}
+                          
+.appName{
+    /*font-size: 1rem;
+    text-align: center;
+    color: blue;*/
+color: whitesmoke;
+   /* color: black ;
+    background-color: #9cf ;
+    border-top: 1px solid #c0ffff ;
+    border-right: 1px solid #00f ;
+    border-bottom: 1px solid #00f ;
+    border-left: 1px solid #c0ffff ;*/
+   
+}
+.addMusic{
+  
+    /*text-align: center;
+    color: black ;
+    background-color: #9cf ;
+    border-top: 1px solid #c0ffff ;
+    border-right: 1px solid #00f ;
+    border-bottom: 1px solid #00f ;
+    border-left: 1px solid #c0ffff ;*/
+}
+.appMain li{
+
+    list-style: none;
+}
+.loadedMusicList{
+    list-style: none;
+    text-align: left;
+    margin-top: 10%;
+
+
+
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .appMain {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+.mp3Image{
+    height: 200px;
+    width: 200px;
+    margin-left: 20%;
+}
+
+.playButtons{
+    margin-left: 25%;
+}
+#nowPlaying{
+margin-left: 25%;
+}
+
+/*page show stuff */
+
+.active{
+    left:0;
+    z-index: 5;
+    /* show one page at a time*/
+}
+
+#footer {
+
+margin-left: -70%;
+}
+
+
